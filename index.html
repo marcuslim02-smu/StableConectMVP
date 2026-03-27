@@ -800,13 +800,13 @@ input[type=range]::-webkit-slider-thumb:hover{transform:scale(1.2)}
         <table class="tbl" id="pay-tbl">
           <thead><tr><th>Date</th><th>Submitter</th><th>Receiver</th><th class="num">Amount</th><th>Wallet</th><th>Status</th><th>Approval</th><th></th></tr></thead>
           <tbody id="pay-tbody">
-            <tr data-cat="bank" data-txid="A1"><td>13 Mar</td><td class="c-muted">M. Torres</td><td>Supplier GmbH DE</td><td class="num">€3,200,000</td><td><span class="badge b-b">Kinexys</span></td><td><span id="txstatus-A1" class="badge b-a">Pending</span></td><td><span id="txappr-A1" class="csq">Your sign</span></td><td><button class="btn" style="font-size:10px;padding:2px 7px" onclick="downloadInvoice('INV-2025-0341','Supplier GmbH DE','€3,200,000','13 Mar 2025','Kinexys')">⬇ Invoice</button> <button class="btn" style="font-size:10px;padding:2px 7px;border-color:var(--blue-mid);color:var(--blue)" onclick="viewSignedMessage('INV-2025-0341')">🔐 Msg</button></td></tr>
-            <tr data-cat="bank" data-txid="A2"><td>13 Mar</td><td class="c-muted">LK</td><td>Taipei Logistics Co</td><td class="num">$285,000</td><td><span class="badge b-b">Kinexys</span></td><td><span id="txstatus-A2" class="badge b-a">Pending</span></td><td><span id="txappr-A2" class="csq">Treasurer sign</span></td><td><button class="btn" style="font-size:10px;padding:2px 7px;border-color:var(--blue-mid);color:var(--blue)" onclick="viewSignedMessage('PO-2025-0112')">🔐 Msg</button></td></tr>
-            <tr data-cat="bank"><td>12 Mar</td><td class="c-muted">A. Patel</td><td>Acme SG Pte Ltd</td><td class="num">SGD 8,000,000</td><td><span class="badge b-t">HSBC Orion</span></td><td><span class="badge b-g">Settled</span></td><td><span class="badge b-g">Both signed</span></td><td><button class="btn" style="font-size:10px;padding:2px 7px" onclick="downloadInvoice('PMT-2025-0312','Acme SG Pte Ltd','SGD 8,000,000','12 Mar 2025','HSBC Orion')">⬇ Invoice</button> <button class="btn" style="font-size:10px;padding:2px 7px;border-color:var(--blue-mid);color:var(--blue)" onclick="viewSignedMessage('PMT-2025-0312')">🔐 Msg</button></td></tr>
-            <tr data-cat="stable"><td>12 Mar</td><td class="c-muted">M. Torres</td><td>US payroll processor</td><td class="num">$48,000</td><td><span class="badge b-p">USDC</span></td><td><span class="badge b-g">Settled</span></td><td><span class="badge b-x">Auto-released</span></td><td><button class="btn" style="font-size:10px;padding:2px 7px" onclick="downloadInvoice('PAY-2025-0312','US Payroll','$48,000','12 Mar 2025','USDC')">⬇ Invoice</button> <button class="btn" style="font-size:10px;padding:2px 7px;border-color:var(--blue-mid);color:var(--blue)" onclick="viewSignedMessage('PAY-2025-0312')">🔐 Msg</button></td></tr>
-            <tr data-cat="bank"><td>12 Mar</td><td class="c-muted">L. Kim</td><td>Taiwan Mfg Co</td><td class="num">$4,800,000</td><td><span class="badge b-t">HSBC Orion</span></td><td><span class="badge b-g">Settled</span></td><td><span class="badge b-g">Both signed</span></td><td><button class="btn" style="font-size:10px;padding:2px 7px" onclick="downloadInvoice('INV-2025-0310','Taiwan Mfg Co','$4,800,000','12 Mar 2025','HSBC Orion')">⬇ Invoice</button> <button class="btn" style="font-size:10px;padding:2px 7px;border-color:var(--blue-mid);color:var(--blue)" onclick="viewSignedMessage('INV-2025-0310')">🔐 Msg</button></td></tr>
-            <tr data-cat="stable"><td>11 Mar</td><td class="c-muted">A. Patel</td><td>Employee expense batch</td><td class="num">$23,400</td><td><span class="badge b-p">USDC</span></td><td><span class="badge b-g">Settled</span></td><td><span class="badge b-x">Auto-released</span></td><td><button class="btn" style="font-size:10px;padding:2px 7px" onclick="downloadInvoice('EXP-2025-0311','Employee Expenses','$23,400','11 Mar 2025','USDC')">⬇ Invoice</button> <button class="btn" style="font-size:10px;padding:2px 7px;border-color:var(--blue-mid);color:var(--blue)" onclick="viewSignedMessage('EXP-2025-0311')">🔐 Msg</button></td></tr>
-            <tr data-cat="bank"><td>10 Mar</td><td class="c-muted">L. Kim</td><td>UK Law Firm LLP</td><td class="num">£280,000</td><td><span class="badge b-t">HSBC Orion</span></td><td><span class="badge b-g">Settled</span></td><td><span class="badge b-b">Treasurer signed</span></td><td><button class="btn" style="font-size:10px;padding:2px 7px" onclick="downloadInvoice('LGL-2025-0310','UK Law Firm LLP','£280,000','10 Mar 2025','HSBC Orion')">⬇ Invoice</button> <button class="btn" style="font-size:10px;padding:2px 7px;border-color:var(--blue-mid);color:var(--blue)" onclick="viewSignedMessage('LGL-2025-0310')">🔐 Msg</button></td></tr>
+            <tr data-cat="bank" data-txid="A1"><td><span class="tx-time" data-posted-iso="2026-03-13T09:05:00+08:00">13 Mar 09:05</span></td><td class="c-muted">M. Torres</td><td>Supplier GmbH DE</td><td class="num">€3,200,000</td><td><span class="badge b-b">Kinexys</span></td><td><span id="txstatus-A1" class="badge b-a">Pending</span></td><td><span id="txappr-A1" class="csq">Your sign</span></td><td><button class="btn" style="font-size:10px;padding:2px 7px" onclick="downloadInvoice('INV-2025-0341','Supplier GmbH DE','€3,200,000','13 Mar 2025','Kinexys')">⬇ Invoice</button> <button class="btn" style="font-size:10px;padding:2px 7px;border-color:var(--blue-mid);color:var(--blue)" onclick="viewSignedMessage('INV-2025-0341')">🔐 Msg</button></td></tr>
+            <tr data-cat="bank" data-txid="A2"><td><span class="tx-time" data-posted-iso="2026-03-13T08:15:00+08:00">13 Mar 08:15</span></td><td class="c-muted">LK</td><td>Taipei Logistics Co</td><td class="num">$285,000</td><td><span class="badge b-b">Kinexys</span></td><td><span id="txstatus-A2" class="badge b-a">Pending</span></td><td><span id="txappr-A2" class="csq">Treasurer sign</span></td><td><button class="btn" style="font-size:10px;padding:2px 7px;border-color:var(--blue-mid);color:var(--blue)" onclick="viewSignedMessage('PO-2025-0112')">🔐 Msg</button></td></tr>
+            <tr data-cat="bank"><td><span class="tx-time" data-posted-iso="2026-03-12T13:30:00+08:00">12 Mar 13:30</span></td><td class="c-muted">A. Patel</td><td>Acme SG Pte Ltd</td><td class="num">SGD 8,000,000</td><td><span class="badge b-t">HSBC Orion</span></td><td><span class="badge b-g">Settled</span></td><td><span class="badge b-g">Both signed</span></td><td><button class="btn" style="font-size:10px;padding:2px 7px" onclick="downloadInvoice('PMT-2025-0312','Acme SG Pte Ltd','SGD 8,000,000','12 Mar 2025','HSBC Orion')">⬇ Invoice</button> <button class="btn" style="font-size:10px;padding:2px 7px;border-color:var(--blue-mid);color:var(--blue)" onclick="viewSignedMessage('PMT-2025-0312')">🔐 Msg</button></td></tr>
+            <tr data-cat="stable"><td><span class="tx-time" data-posted-iso="2026-03-12T10:02:00+08:00">12 Mar 10:02</span></td><td class="c-muted">M. Torres</td><td>US payroll processor</td><td class="num">$48,000</td><td><span class="badge b-p">USDC</span></td><td><span class="badge b-g">Settled</span></td><td><span class="badge b-x">Auto-released</span></td><td><button class="btn" style="font-size:10px;padding:2px 7px" onclick="downloadInvoice('PAY-2025-0312','US Payroll','$48,000','12 Mar 2025','USDC')">⬇ Invoice</button> <button class="btn" style="font-size:10px;padding:2px 7px;border-color:var(--blue-mid);color:var(--blue)" onclick="viewSignedMessage('PAY-2025-0312')">🔐 Msg</button></td></tr>
+            <tr data-cat="bank"><td><span class="tx-time" data-posted-iso="2026-03-12T00:20:00+08:00">12 Mar 00:20</span></td><td class="c-muted">L. Kim</td><td>Taiwan Mfg Co</td><td class="num">$4,800,000</td><td><span class="badge b-t">HSBC Orion</span></td><td><span class="badge b-g">Settled</span></td><td><span class="badge b-g">Both signed</span></td><td><button class="btn" style="font-size:10px;padding:2px 7px" onclick="downloadInvoice('INV-2025-0310','Taiwan Mfg Co','$4,800,000','12 Mar 2025','HSBC Orion')">⬇ Invoice</button> <button class="btn" style="font-size:10px;padding:2px 7px;border-color:var(--blue-mid);color:var(--blue)" onclick="viewSignedMessage('INV-2025-0310')">🔐 Msg</button></td></tr>
+            <tr data-cat="stable"><td><span class="tx-time" data-posted-iso="2026-03-11T06:50:00+08:00">11 Mar 06:50</span></td><td class="c-muted">A. Patel</td><td>Employee expense batch</td><td class="num">$23,400</td><td><span class="badge b-p">USDC</span></td><td><span class="badge b-g">Settled</span></td><td><span class="badge b-x">Auto-released</span></td><td><button class="btn" style="font-size:10px;padding:2px 7px" onclick="downloadInvoice('EXP-2025-0311','Employee Expenses','$23,400','11 Mar 2025','USDC')">⬇ Invoice</button> <button class="btn" style="font-size:10px;padding:2px 7px;border-color:var(--blue-mid);color:var(--blue)" onclick="viewSignedMessage('EXP-2025-0311')">🔐 Msg</button></td></tr>
+            <tr data-cat="bank"><td><span class="tx-time" data-posted-iso="2026-03-10T08:04:00+08:00">10 Mar 08:04</span></td><td class="c-muted">L. Kim</td><td>UK Law Firm LLP</td><td class="num">£280,000</td><td><span class="badge b-t">HSBC Orion</span></td><td><span class="badge b-g">Settled</span></td><td><span class="badge b-b">Treasurer signed</span></td><td><button class="btn" style="font-size:10px;padding:2px 7px" onclick="downloadInvoice('LGL-2025-0310','UK Law Firm LLP','£280,000','10 Mar 2025','HSBC Orion')">⬇ Invoice</button> <button class="btn" style="font-size:10px;padding:2px 7px;border-color:var(--blue-mid);color:var(--blue)" onclick="viewSignedMessage('LGL-2025-0310')">🔐 Msg</button></td></tr>
           </tbody>
         </table>
       </div>
@@ -1110,6 +1110,31 @@ function fmtDateInputGMT8(d){
   return y+'-'+mo+'-'+dd;
 }
 
+// ── Relative / live transaction timestamps ────────────────────────
+function formatTxTime(isoStr){
+  var posted=new Date(isoStr);
+  var now=new Date();
+  var diffMs=now-posted;
+  var diffMin=Math.floor(diffMs/60000);
+  var gmt8=new Date(posted.getTime()+8*3600000);
+  var months=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  var dateStr=gmt8.getUTCDate()+' '+months[gmt8.getUTCMonth()]+' '+gmt8.getUTCFullYear();
+  var hh=gmt8.getUTCHours().toString().padStart(2,'0');
+  var mm=gmt8.getUTCMinutes().toString().padStart(2,'0');
+  var timeStr=hh+':'+mm+' SGT';
+  // Always show date + time; add relative hint for very recent
+  if(diffMin<1) return dateStr+', '+timeStr+' · Just now';
+  if(diffMin<60) return dateStr+', '+timeStr+' · '+diffMin+' min ago';
+  return dateStr+', '+timeStr;
+}
+
+function refreshTxTimes(){
+  document.querySelectorAll('.tx-time[data-posted-iso]').forEach(function(el){
+    el.textContent=formatTxTime(el.getAttribute('data-posted-iso'));
+    el.title=el.getAttribute('data-posted-iso'); // show full timestamp on hover
+  });
+}
+
 function initLiveClock(){
   var now8=nowGMT8();
   var dateStr=fmtDateGMT8(now8);
@@ -1230,6 +1255,8 @@ async function fetchLiveRates(){
 // Fetch on load, then refresh every 60 seconds
 document.addEventListener('DOMContentLoaded',function(){
   initLiveClock();
+  setTimeout(refreshTxTimes,200);
+  setInterval(refreshTxTimes,60000);  // refresh every minute
   fetchLiveRates();
   setInterval(fetchLiveRates,60000);
   // Auto-generate a local signing key on first load
@@ -1820,9 +1847,9 @@ var selectedRail='kinexys';
 
 // All available rails with live-simulated fees
 var railData=[
-  {id:'kinexys',name:'Kinexys Digital Payments',provider:'JPMorgan',icon:'🔵',rate:0.0005,min:50,speed:'T+0',settle:'Instant (tokenized)',networks:['USD','GBP','SGD','EUR'],recommended:false,type:'tokenized'},
-  {id:'orion',name:'HSBC Orion',provider:'HSBC',icon:'🔴',rate:0.0008,min:75,speed:'T+0–T+1',settle:'Same/next day',networks:['GBP','SGD','EUR','USD'],recommended:false,type:'tokenized'},
-  {id:'citi',name:'Citi Token Services',provider:'Citibank',icon:'🔷',rate:0.0004,min:100,speed:'T+0',settle:'Instant (tokenized)',networks:['USD'],recommended:false,type:'tokenized'},
+  {id:'kinexys',name:'Kinexys Digital Payments',provider:'JPMorgan',icon:'🔵',rate:0.0002,min:20,speed:'T+0',settle:'Instant (tokenized)',networks:['USD','GBP','SGD','EUR'],recommended:false,type:'tokenized'},
+  {id:'orion',name:'HSBC Orion',provider:'HSBC',icon:'🔴',rate:0.0003,min:30,speed:'T+0–T+1',settle:'Same/next day',networks:['GBP','SGD','EUR','USD'],recommended:false,type:'tokenized'},
+  {id:'citi',name:'Citi Token Services',provider:'Citibank',icon:'🔷',rate:0.00015,min:15,speed:'T+0',settle:'Instant (tokenized)',networks:['USD'],recommended:false,type:'tokenized'},
   {id:'usdc',name:'USDC / Circle',provider:'Circle',icon:'💎',rate:0.0001,min:1.5,speed:'~30s',settle:'On-chain confirmation',networks:['USD'],recommended:false,type:'stablecoin'},
   {id:'swift',name:'SWIFT GPI',provider:'SWIFT network',icon:'🌐',rate:0.0025,min:25,speed:'T+1–T+3',settle:'International wire',networks:['USD','GBP','SGD','EUR'],recommended:false,type:'traditional'},
   {id:'sepa',name:'SEPA Instant',provider:'EBA Clearing',icon:'🇪🇺',rate:0.0005,min:0.2,speed:'T+0 (10s)',settle:'Pan-European instant',networks:['EUR'],recommended:false,type:'traditional'},
@@ -2364,7 +2391,7 @@ function submitPay(){
   var newRow=document.createElement('tr');
   newRow.setAttribute('data-cat','bank');
   newRow.style.background='var(--green-l)';
-  newRow.innerHTML='<td><strong>'+fmtTimeGMT8(nowGMT8())+'</strong></td>'
+  newRow.innerHTML=(function(){var _n=nowGMT8();return '<td><span class="tx-time" data-posted-iso="'+_n.toISOString()+'">'+fmtTimeGMT8(_n)+'</span></td>';})()
     +'<td class="c-muted">'+activeProfile.initials+'</td>'
     +'<td>'+recv+'</td>'
     +'<td class="num">'+amtStr+'</td>'
@@ -3021,7 +3048,7 @@ function finaliseApproval(id,needsCFO,sigShort,dispatchHash){
       var hasMsgRecord=approvalId&&txSignedMessages[approvalId];
       // Build dispatch hash snippet for receiver cell
       var hashSnippet=hasMsgRecord?'<div style="font-size:10px;color:var(--text-muted)">hash:'+txSignedMessages[approvalId].dispatchHash.slice(0,12)+'&hellip;</div>':'';
-      newTxRow.innerHTML='<td><strong>'+fmtTimeGMT8(nowGMT8())+'</strong></td>'
+      newTxRow.innerHTML=(function(){var _n=nowGMT8();return '<td><span class="tx-time" data-posted-iso="'+_n.toISOString()+'">'+fmtTimeGMT8(_n)+'</span></td>';})()
         +'<td class="c-muted">'+submittedBy2+'</td>'
         +'<td>'+receiverEl+hashSnippet+'</td>'
         +'<td class="num">'+amtTxt2+'</td>'
@@ -3101,7 +3128,7 @@ function finalisePayment(ctx,sigShort,dispatchHash){
     var autoRow=document.createElement('tr');
     autoRow.setAttribute('data-cat','bank');
     autoRow.style.background='var(--green-l)';
-    autoRow.innerHTML='<td><strong>'+fmtTimeGMT8(nowGMT8())+'</strong></td>'
+    autoRow.innerHTML=(function(){var _n=nowGMT8();return '<td><span class="tx-time" data-posted-iso="'+_n.toISOString()+'">'+fmtTimeGMT8(_n)+'</span></td>';})()
       +'<td class="c-muted">'+activeProfile.initials+'</td>'
       +'<td>'+ctx.receiver+'<div style="font-size:10px;color:var(--text-muted)">hash:'+dispatchHash.slice(0,12)+'&hellip;</div></td>'
       +'<td class="num">'+ctx.amount+'</td>'
@@ -3150,7 +3177,7 @@ function finalisePayment(ctx,sigShort,dispatchHash){
   if(_txKey&&!txSignedMessages[_txKey]&&dispatchHash){
     txSignedMessages[_txKey]={message:'(see signing modal)',sig:sigShort,dispatchHash:dispatchHash,pubKey:'0x'+walletPubKeyHex,ts:new Date().toISOString()};
   }
-  newRow.innerHTML='<td><strong>'+fmtTimeGMT8(nowGMT8())+'</strong></td>'
+  newRow.innerHTML=(function(){var _n=nowGMT8();return '<td><span class="tx-time" data-posted-iso="'+_n.toISOString()+'">'+fmtTimeGMT8(_n)+'</span></td>';})()
     +'<td class="c-muted">Marcus Lim</td>'
     +'<td>'+recv+'<div style="font-size:10px;color:var(--text-muted)">hash:'+dispatchHash.slice(0,12)+'&hellip;</div></td>'
     +'<td class="num">'+amtStr+'</td>'
@@ -3346,7 +3373,7 @@ function nav(btn,pageId){
   if(pageId==='pg-pos')buildPos();
   if(pageId==='pg-ov')buildCpTable();
   if(pageId==='pg-appr')updateApprQueueView();
-  if(pageId==='pg-pay')updateTxView();
+  if(pageId==='pg-pay'){updateTxView();refreshTxTimes();}
 }
 document.querySelectorAll('.nav-btn').forEach(function(btn,i){
   var pages=['pg-ov','pg-pos','pg-appr','pg-pay','pg-ctrl','pg-wall','pg-recv','pg-recon','pg-genius'];
